@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import { Spotlight } from "@/components/ui/Spotlight";
-
+import "../app/globals.css"; // Ensure global styles are imported
+import { Button } from "@/components/ui/moving-border";
 
 export default function HeroSection()
 {
@@ -15,7 +16,7 @@ export default function HeroSection()
       />
 
 <div className="p-4 relative z-10 w-full text-center text-amber-50">
- 
+  
  
  <h1 className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">Master the art of music</h1>
  <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">Dive into our comprehensive music courses and transform your musical journey today. Whether you're a beginner or looking to refine your skills, join us to unlock your true potential.</p>
@@ -23,7 +24,12 @@ export default function HeroSection()
  <div className="mt-4">
    
    <Link href={"/courses"} >
-      Explore Courses
+    <Button
+        borderRadius="1.75rem"
+        className="bg-black dark:bg-slate-900 text-white dark:text-white  dark:border-slate-800"
+      >
+        Borders are cool
+      </Button>
    </Link>
  </div>
 </div>
