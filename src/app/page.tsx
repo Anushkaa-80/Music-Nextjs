@@ -2,6 +2,8 @@ import HeroSection from "@/components/HeroSection";
 import FeaturedCourses from "@/components/FeaturedCourses";
 import React from "react";
 import WhyChooseUs from "@/components/ui/WhyChooseUs";
+import TestimonialCards from "@/components/TestimonialCards";
+import UpcomingWebinars from "@/components/UpcomingWebinars";
 
 
 export default function Home() {
@@ -10,6 +12,8 @@ export default function Home() {
    <HeroSection />
    <FeaturedCourses />
    <WhyChooseUs/>
+   <TestimonialCards/>
+   <UpcomingWebinars/>
    </main>
   );
 }
