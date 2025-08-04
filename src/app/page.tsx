@@ -4,7 +4,7 @@ import React from "react";
 import WhyChooseUs from "@/components/ui/WhyChooseUs";
 import TestimonialCards from "@/components/TestimonialCards";
 import UpcomingWebinars from "@/components/UpcomingWebinars";
-
+import Instructor from "@/components/Instructor";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
    <WhyChooseUs/>
    <TestimonialCards/>
    <UpcomingWebinars/>
+   <Instructor/>
    </main>
   );
 }
